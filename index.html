@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CYBER RIGS - Gaming Computer Shop</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="navbar">
+    <a class="logo" href="index.html">CYBER<span>RIGS</span></a>
+
+    <form class="search-box" role="search">
+      <input type="search" aria-label="ស្វែងរកផលិតផល" placeholder="ស្វែងរក Gaming PC, Specs, Accessories...">
+      <button type="submit" aria-label="ស្វែងរក"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Gaming PCs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="#booking">Pre-Order</a>
+    </nav>
+
+    <button class="btn btn-glow cart-button" type="button" aria-haspopup="dialog">CART [0]</button>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <span class="badge">NEXT-GEN PERFORMANCE</span>
+      <h1>DOMINATE THE <span>VIRTUAL REALM</span></h1>
+      <p>កុំព្យូទ័រ Gaming កម្លាំងខ្លាំង Bounded ជាមួយបច្ចេកវិទ្យាចុងក្រោយ Custom RGB & Water Cooling civilization style.</p>
+      <div class="hero-btns">
+        <a href="#booking" class="btn btn-primary">BUILD YOUR RIG</a>
+        <a href="#products" class="btn btn-secondary">EXPLORE SHOP</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase Section -->
+  <section class="products-section" id="products">
+    <h2 class="section-title">FEATURED <span>BATTLESTATIONS</span></h2>
+    
+    <div class="product-grid">
+      <!-- Product Card 1 -->
+      <div class="product-card">
+        <span class="card-tag">HOT</span>
+        <div class="img-box">
+          <img src="https://dlcdnwebimgs.asus.com/files/media/47789293-2c75-4399-9cc0-04daeb806f68/v6/images/large/1x/Design_carousal_2.webp" alt="Asus TUF">
+        </div>
+        <div class="card-info">
+          <h3>Asus TUF</h3>
+          <p class="specs">Intel® Core™ Ultra 9 275HX | RTX 5070 | 32 GB DDR5-5600 MHz</p>
+          <div class="card-bottom">
+            <span class="price">$1,000</span>
+            <button type="button" class="btn btn-card" data-add-to-cart="Asus TUF" data-price="1000">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card">
+        <span class="card-tag">POPULAR</span>
+        <div class="img-box">
+          <img src="https://dlcdnwebimgs.asus.com/files/media/202602/6481652a-8044-43e0-b048-d316e10751e3/v1/images/m-bg-battery_1.webp" alt="Asus Rog Strix">
+        </div>
+        <div class="card-info">
+          <h3>Asus Rog Strix</h3>
+          <p class="specs">Ultra 9 Processor 290Hx Plus | RTX 5080 | 32GB+32GB DDR5</p>
+          <div class="card-bottom">
+            <span class="price">$2,000</span>
+            <button type="button" class="btn btn-card" data-add-to-cart="Asus Rog Strix" data-price="2000">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card">
+        <span class="card-tag">You're Rich</span>
+        <div class="img-box">
+          <img src="https://i0.wp.com/www.consolecreatures.com/wp-content/uploads/2026/08/Strix-Scar-18.webp" alt="Asus Rog Scar">
+        </div>
+        <div class="card-info">
+          <h3>Asus Rog Scar</h3>
+          <p class="specs">Ultra 9 processor 290HX Plus | GeForce RTX™ 5090 | 128GB DDR5</p>
+          <div class="card-bottom">
+            <span class="price">$3,000</span>
+            <button type="button" class="btn btn-card" data-add-to-cart="Asus Rog Scar" data-price="3000">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking / Pre-Order Form Section -->
+  <section class="booking-section" id="booking">
+    <div class="booking-container">
+      <h2 class="section-title">PRE-ORDER & <span>CUSTOM RIG</span></h2>
+      <p class="booking-subtitle">បំពេញព័ត៌មានខាងក្រោមដើម្បីកក់ ឬកុម្ម៉ង់តម្លើងកុំព្យូទ័រ Gaming តាមតម្រូវការ</p>
+      
+      <form class="booking-form" data-booking-form>
+        <div class="form-group-double">
+          <div class="form-control">
+            <label>(Full Name)</label>
+            <input type="text" placeholder="Sovannaroth" required>
+          </div>
+          <div class="form-control">
+            <label>(Phone Number)</label>
+            <input type="tel" placeholder="096 7119 550" required>
+          </div>
+        </div>
+
+        <div class="form-group-double">
+          <div class="form-control">
+            <label>(Select Model)</label>
+            <select required>
+              <option value="" disabled selected>-- ជ្រើសរើស Computer --</option>
+              <option value="tuf">Asus TUF ($1,00)</option>
+              <option value="strix">Asus Rog Strix ($2,00)</option>
+              <option value="scar">Asus Rog Scar ($3,00)</option>
+              <option value="custom">Custom Build (តម្លើងតាមចិត្ត)</option>
+            </select>
+          </div>
+          <div class="form-control">
+            <label>(Email Address)</label>
+            <input type="email" placeholder="example@gmail.com">
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label>ចំណង់ចំណូលចិត្តបន្ថែម ឬ Specification ដែលចង់បាន</label>
+          <textarea rows="4" placeholder="រៀបរាប់ពីទំហំ RAM, SSD, Graphic Card ឬ Water Cooling ដែលអ្នកចង់បានបន្ថែម..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-submit">SUBMIT PRE-ORDER</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer-section" id="contact">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <a class="logo" href="index.html">CYBER<span>RIGS</span></a>
+        <p class="footer-desc">ហាងលក់ កុំព្យូទ័រ Gaming ឈានមុខគេ ជាមួយបច្ចេកវិទ្យាទំនើបចុងក្រោយ និងសេវាកម្មប្រកបដោយទំនុកចិត្ត។</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>STORE <span>LOCATION</span></h3>
+        <ul class="contact-info">
+          <li><i class="fa-solid fa-location-dot"></i> ផ្ទះលេខ 123, ផ្លូវកម្ពុជាក្រោម, រាជធានីភ្នំពេញ</li>
+          <li><i class="fa-solid fa-phone"></i> +855 96 711 9550 / +855 76 704 5410</li>
+          <li><i class="fa-solid fa-clock"></i> ច័ន្ទ - អាទិត្យ: 8AM > 8PM</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>CONNECT <span>WITH US</span></h3>
+        <p>តាមដានពួកយើងតាមរយៈបណ្ដាញសង្គម៖</p>
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-icon fb"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://tiktok.com" target="_blank" class="social-icon tt"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://instagram.com" target="_blank" class="social-icon ig"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 CYBER RIGS. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog-header">
+      <h2 id="cart-title">YOUR <span>CART</span></h2>
+      <button class="cart-close" id="close-cart" type="button" aria-label="បិទកន្ត្រក">&times;</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-total"><span>សរុប</span><strong id="cart-total">$0</strong></div>
+    <div class="cart-actions">
+      <button class="btn btn-secondary" id="reset-cart" type="button">RESET CART</button>
+      <button class="btn btn-primary" id="continue-shopping" type="button">CONTINUE SHOPPING</button>
+    </div>
+  </dialog>
+  <script src="site.js"></script>
+</body>
+</html>
