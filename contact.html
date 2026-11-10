@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | CYBER RIGS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">CYBER<span>RIGS</span></a>
+    <form class="search-box" role="search">
+      <input type="search" aria-label="ស្វែងរកផលិតផល" placeholder="ស្វែងរក Gaming PC, Specs, Accessories...">
+      <button type="submit" aria-label="ស្វែងរក"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Gaming PCs</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a href="index.html#booking">Pre-Order</a>
+    </nav>
+    <button class="btn btn-glow cart-button" type="button" aria-haspopup="dialog">CART [0]</button>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <span class="badge">WE'RE HERE TO HELP</span>
+      <h1>CONTACT <span>US</span></h1>
+      <p>មានសំណួរអំពីផលិតផល ឬចង់កុម្ម៉ង់ custom build? សូមផ្ញើសារមកកាន់យើង។</p>
+    </section>
+    <section class="content-panel contact-layout">
+      <div>
+        <h2>Get in <span>touch</span></h2>
+        <p>ក្រុមការងាររបស់យើងរីករាយក្នុងការជួយណែនាំអំពីកុំព្យូទ័រ Gaming និងគ្រឿងបន្លាស់។</p>
+        <ul class="contact-details">
+          <li><i class="fa-solid fa-location-dot"></i> ផ្ទះលេខ 123, រាជធានីភ្នំពេញ</li>
+          <li><i class="fa-solid fa-phone"></i> +855 96 711 9550</li>
+          <li><i class="fa-solid fa-envelope"></i> hello@cyberrigs.example</li>
+          <li><i class="fa-solid fa-clock"></i> ច័ន្ទ - អាទិត្យ: 8AM - 8PM</li>
+        </ul>
+      </div>
+      <form class="booking-form" data-contact-form>
+        <div class="form-control">
+          <label for="contact-name">ឈ្មោះ</label>
+          <input id="contact-name" name="name" type="text" placeholder="បញ្ចូលឈ្មោះរបស់អ្នក" required>
+        </div>
+        <div class="form-control">
+          <label for="contact-email">អ៊ីមែល</label>
+          <input id="contact-email" name="email" type="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-control">
+          <label for="contact-subject">ប្រធានបទ</label>
+          <input id="contact-subject" name="subject" type="text" placeholder="សំណួរអំពីផលិតផល" required>
+        </div>
+        <div class="form-control">
+          <label for="contact-message">សារ</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="សរសេរសាររបស់អ្នក..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">SEND MESSAGE</button>
+        <p class="form-message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="footer-grid">
+      <div class="footer-col"><a class="logo" href="index.html">CYBER<span>RIGS</span></a><p class="footer-desc">ហាងលក់កុំព្យូទ័រ Gaming និងគ្រឿងបន្លាស់ដែលអ្នកអាចទុកចិត្តបាន។</p></div>
+      <div class="footer-col"><h3>STORE <span>LOCATION</span></h3><ul class="contact-info"><li><i class="fa-solid fa-location-dot"></i> រាជធានីភ្នំពេញ</li><li><i class="fa-solid fa-phone"></i> +855 96 711 9550</li></ul></div>
+      <div class="footer-col"><h3>QUICK <span>LINKS</span></h3><ul class="contact-info"><li><a href="products.html">Gaming PCs</a></li><li><a href="about.html">About us</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 CYBER RIGS. All Rights Reserved.</p></div>
+  </footer>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog-header">
+      <h2 id="cart-title">YOUR <span>CART</span></h2>
+      <button class="cart-close" id="close-cart" type="button" aria-label="បិទកន្ត្រក">&times;</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-total"><span>សរុប</span><strong id="cart-total">$0</strong></div>
+    <div class="cart-actions">
+      <button class="btn btn-secondary" id="reset-cart" type="button">RESET CART</button>
+      <button class="btn btn-primary" id="continue-shopping" type="button">CONTINUE SHOPPING</button>
+    </div>
+  </dialog>
+  <script src="site.js"></script>
+</body>
+</html>

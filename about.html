@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | CYBER RIGS</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="index.html">CYBER<span>RIGS</span></a>
+    <form class="search-box" role="search">
+      <input type="search" aria-label="ស្វែងរកផលិតផល" placeholder="ស្វែងរក Gaming PC, Specs, Accessories...">
+      <button type="submit" aria-label="ស្វែងរក"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </form>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Gaming PCs</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html#booking">Pre-Order</a>
+    </nav>
+    <button class="btn btn-glow cart-button" type="button" aria-haspopup="dialog">CART [0]</button>
+  </header>
+
+  <main>
+    <section class="page-intro">
+      <span class="badge">WHO WE ARE</span>
+      <h1>ABOUT <span>CYBER RIGS</span></h1>
+      <p>យើងជួយអ្នកលេងហ្គេមស្វែងរក និងបង្កើតកុំព្យូទ័រដែលសាកសមនឹងតម្រូវការរបស់ពួកគេ។</p>
+    </section>
+    <section class="content-panel">
+      <h2>Built for <span>every player</span></h2>
+      <p>CYBER RIGS ជាហាងកុំព្យូទ័រ Gaming ដែលផ្ដល់ជូននូវផលិតផល និងសេវាកម្មជ្រើសរើស specification តាមតម្រូវការ។ មិនថាអ្នកកំពុងចាប់ផ្ដើម ឬចង់បង្កើនសមត្ថភាព setup របស់អ្នកទេ យើងត្រៀមជួយណែនាំជម្រើសដែលសមស្រប។</p>
+      <div class="feature-grid">
+        <article class="feature-card"><i class="fa-solid fa-microchip"></i><h3>Quality Components</h3><p>ជ្រើសរើសគ្រឿងបន្លាស់ដែលមានសមត្ថភាព និងសាកសមនឹងការប្រើប្រាស់។</p></article>
+        <article class="feature-card"><i class="fa-solid fa-screwdriver-wrench"></i><h3>Custom Builds</h3><p>បង្កើត setup តាមតម្រូវការ និងថវិការបស់អ្នក។</p></article>
+        <article class="feature-card"><i class="fa-solid fa-headset"></i><h3>Friendly Support</h3><p>ទាក់ទងមកយើងដើម្បីទទួលបានការណែនាំអំពីផលិតផល។</p></article>
+      </div>
+      <p style="margin-top: 2rem; text-align: center;"><a href="products.html" class="btn btn-primary">EXPLORE OUR PCs</a></p>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="footer-grid">
+      <div class="footer-col"><a class="logo" href="index.html">CYBER<span>RIGS</span></a><p class="footer-desc">ហាងលក់កុំព្យូទ័រ Gaming និងគ្រឿងបន្លាស់ដែលអ្នកអាចទុកចិត្តបាន។</p></div>
+      <div class="footer-col"><h3>STORE <span>LOCATION</span></h3><ul class="contact-info"><li><i class="fa-solid fa-location-dot"></i> រាជធានីភ្នំពេញ</li><li><i class="fa-solid fa-phone"></i> +855 96 711 9550</li></ul></div>
+      <div class="footer-col"><h3>QUICK <span>LINKS</span></h3><ul class="contact-info"><li><a href="products.html">Gaming PCs</a></li><li><a href="contact.html">Contact us</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>&copy; 2026 CYBER RIGS. All Rights Reserved.</p></div>
+  </footer>
+  <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="cart-dialog-header">
+      <h2 id="cart-title">YOUR <span>CART</span></h2>
+      <button class="cart-close" id="close-cart" type="button" aria-label="បិទកន្ត្រក">&times;</button>
+    </div>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-total"><span>សរុប</span><strong id="cart-total">$0</strong></div>
+    <div class="cart-actions">
+      <button class="btn btn-secondary" id="reset-cart" type="button">RESET CART</button>
+      <button class="btn btn-primary" id="continue-shopping" type="button">CONTINUE SHOPPING</button>
+    </div>
+  </dialog>
+  <script src="site.js"></script>
+</body>
+</html>
